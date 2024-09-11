@@ -24,3 +24,13 @@ public static void main(String[] args) {
     System.out.println("Smallest Number :- "+Smallest);
 }    
 }
+
+
+Output:- 
+Enter size of array:-5
+Enter the number for element 1 :10
+Enter the number for element 2 :32  
+Enter the number for element 3 :63
+Enter the number for element 4 :665
+Enter the number for element 5 :12
+Smallest Number :- 10
