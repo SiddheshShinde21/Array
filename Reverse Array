@@ -1,0 +1,35 @@
+//Reverse Array
+public class ReverseArray {
+    static int reverse(int[]arr,int size){
+        int start = 0;
+        int end = size-1;
+        while (start<end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+        }
+        return end;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {2,3,6,9,8,78};
+        int size = arr.length;
+        System.out.print("Original Array:-");
+        for(int i = 0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.print("\n");
+        reverse(arr,size);
+        System.out.print("Reversed Array:-");
+        for(int i = 0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
+
+    }
+}
+
+Output:- 
+Original Array:-2 3 6 9 8 78 
+Reversed Array:-78 8 9 6 3 2 
