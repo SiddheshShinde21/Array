@@ -1,0 +1,23 @@
+// Linear Seach 
+import java.util.*;
+public class LinearSearch {
+    static int Linear(int target,int[] arr,int size){
+        for(int i = 0;i<size;i++){
+            if (arr[i] ==target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int target = sc.nextInt();
+        int[] arr = {2,3,6,9,10,20};
+        int size = 6;
+        System.out.println(Linear(target,arr,size));
+    }
+}
+Output:- 
+10 // Enter Number to search
+4 // Index Number
